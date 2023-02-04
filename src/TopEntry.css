@@ -1,0 +1,49 @@
+.top-entry {
+  min-width: 450px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.top-entry .left {
+  display: flex;
+  align-items: center;
+}
+
+.top-entry .left img {
+  width: 48px;
+  height: 48px;
+  image-rendering: optimizeSpeed; /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges; /* Firefox                        */
+  image-rendering: -o-crisp-edges; /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated; /* Chrome */
+  image-rendering: optimize-contrast; /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor; /* IE8+                           */
+}
+
+.top-entry .left div {
+  margin-left: 10px;
+}
+
+.top-entry .left span {
+  display: block;
+  color: #ffee93;
+  font-size: 80%;
+}
+
+.top-entry .right {
+  padding: 10px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.top-entry .value {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.top-entry .value-name {
+  font-size: 80%;
+}

@@ -1,0 +1,47 @@
+.purchase-modal input {
+  min-width: 240px;
+}
+
+.purchase-modal .first {
+  display: flex;
+}
+
+.purchase-modal .first div {
+  flex-grow: 1;
+  display: flex;
+}
+
+.purchase-modal .first div * {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.purchase-modal.no-settings .first {
+  justify-content: flex-end;
+}
+
+.purchase-modal button.buy {
+  margin-left: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.purchase-modal button.setting {
+  flex-grow: 1;
+  flex-basis: 0;
+  background-color: #0a2026;
+  color: #c4c7cc;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.purchase-modal button.setting.active {
+  background-color: #ffee93;
+  color: #000;
+  border: 1px solid #ffee93;
+}
+
+.purchase-modal .desc {
+  background-color: #0a2026;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}

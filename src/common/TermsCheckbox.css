@@ -1,0 +1,19 @@
+div.terms-checkbox {
+  margin-bottom: 8px;
+}
+
+div.terms-checkbox input {
+  display: inline-block !important;
+  width: unset;
+  margin: 0 6px 0 0 !important;
+}
+
+div.terms-checkbox label {
+  display: inline;
+  color: #b7b7b7;
+}
+
+div.terms-checkbox a {
+  color: #ffee93;
+  text-decoration: underline;
+}

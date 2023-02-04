@@ -1,0 +1,18 @@
+.cart-modal .controls {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-modal .controls button {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.cart-modal hr.last {
+  margin-bottom: 0;
+}
+
+.empty-cart {
+  text-align: center;
+  margin-top: 15px;
+}

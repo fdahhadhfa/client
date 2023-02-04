@@ -1,0 +1,101 @@
+.payment-provider-select-modal .controls {
+  display: flex;
+  margin-top: 48px;
+}
+
+.payment-provider-select-modal .controls button {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.payment-provider-select-modal .controls button.back {
+  color: white;
+  background: gray;
+  margin-right: 16px;
+}
+
+.payment-provider-select-modal p {
+  color: lightgray;
+}
+
+.payment-provider-select-modal p.primary {
+  color: white;
+  margin-bottom: 16px;
+}
+
+.payment-provider-select-modal .sides {
+  display: flex;
+}
+
+.payment-provider-select-modal .sides > div {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.payment-provider-select-modal .right {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.payment-provider-select-modal .right > div {
+  --scale: 1.1;
+  width: calc(120px * var(--scale));
+  height: calc(80px * var(--scale));
+  background-color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+
+  flex-basis: 33%;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.payment-provider-select-modal .right > div.selected {
+  background-color: #ffee93;
+}
+
+.payment-provider-select-modal .right > div img {
+  height: 80%;
+}
+
+@media (max-width: 600px) {
+  .payment-provider-select-modal .sides {
+    flex-direction: column;
+  }
+
+  .payment-provider-select-modal .right {
+    margin-top: 24px;
+  }
+
+  .payment-provider-select-modal .controls {
+    flex-direction: column;
+    margin-top: 24px;
+  }
+
+  .payment-provider-select-modal .controls button {
+    width: 100%;
+    flex-basis: unset;
+    flex-grow: unset;
+    min-height: 40px;
+  }
+
+  .payment-provider-select-modal .controls button.back {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .payment-provider-select-modal .right > div {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 320px) {
+  .payment-provider-select-modal .right > div {
+    flex-basis: 100%;
+  }
+}

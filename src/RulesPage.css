@@ -1,0 +1,33 @@
+.rules {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1px 15px 15px;
+  text-align: left;
+}
+
+.rules h2 {
+  margin-top: 15px;
+}
+
+.rules p {
+  margin-top: 5px;
+}
+
+.rules span {
+  display: block;
+  color: #bbb;
+}
+
+.rules a {
+  color: #ffee93;
+  text-decoration: underline;
+}
+
+.rules .icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.rules .icons img {
+  height: 40px;
+  margin-right: 10px;
+}

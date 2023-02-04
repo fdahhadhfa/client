@@ -1,0 +1,19 @@
+.mobile-cart .header {
+  display: flex;
+}
+
+.mobile-cart .header h1 {
+  flex-grow: 1;
+  font-size: 140%;
+  text-align: center;
+}
+
+.mobile-cart input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.mobile-cart button.buy {
+  width: 100%;
+}

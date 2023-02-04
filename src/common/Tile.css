@@ -1,0 +1,202 @@
+.tile {
+  --tile-size: calc(200px);
+  position: relative;
+  box-sizing: border-box;
+  width: var(--tile-size);
+  height: var(--tile-size);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.25);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  transition: background-color 0.25s;
+  overflow: hidden;
+}
+
+.tile:not(.nohover):hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.tile .discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  background: #ffee93;
+  color: #000;
+  font-weight: bold;
+  text-shadow: 0px 0px 0px;
+}
+
+.tile .price {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 8px 13px;
+  font-weight: bold;
+  color: #ffee93;
+  font-size: 120%;
+  transition: bottom 0.25s;
+}
+
+.tile:not(.nohover):hover .price {
+  bottom: 48px;
+}
+
+.tile .price span {
+  color: #afb0b0;
+  text-decoration: line-through;
+  padding-left: 5px;
+}
+
+.tile .title {
+  position: absolute;
+  top: calc(100% - 34px * 1.8);
+  left: 0;
+  padding: 0px 13px;
+  color: #fff;
+  font-size: 120%;
+  font-weight: bold;
+  transition: top 0.25s;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: calc(var(--tile-size) - 13px * 2);
+}
+
+.tile:not(.nohover):hover .title {
+  top: 8px;
+  white-space: normal;
+}
+
+.tile:not(.nohover):hover .discount {
+  visibility: hidden;
+}
+
+.tile .desc {
+  display: none;
+}
+
+/* === BUTTONS === */
+
+.tile .buttons {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  width: calc(100% - 16px);
+  display: flex;
+}
+
+.tile button {
+  flex-grow: 1;
+  left: 8px;
+  bottom: 8px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 0px;
+  height: 42px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in;
+}
+
+.tile:not(.nohover):hover button {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tile button.buy {
+  margin-right: 5px;
+  background: #ffee93;
+  color: #000;
+  border: 1px solid #ffee93;
+}
+
+.tile button.add-to-cart {
+  background: #0a2026;
+  color: #bdc1c6;
+  border: 1px solid #bdc1c6;
+}
+
+.tile button img {
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin: 0px 0px;
+}
+
+/* === WIDE TILES === */
+
+.tile.wide {
+  width: calc(var(--tile-size) * 2);
+}
+
+.tile.wide .title {
+  top: 0;
+  padding: 8px 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: calc(var(--tile-size) * 2 - 13px * 2);
+}
+
+.tile.wide .desc {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 34px 13px;
+  color: #a7a8a9;
+  font-size: 110%;
+}
+
+.tile.wide button {
+  flex: 1 1 0;
+}
+
+.tile.wide button.add-to-cart img {
+  margin: 0px 5px;
+}
+
+/* === HUGE TILES === */
+
+.tile.huge {
+  width: calc(var(--tile-size) * 4);
+  background-position-x: 100%;
+}
+
+.tile.huge .title {
+  top: 0;
+  padding: 8px 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: calc(var(--tile-size) * 4 - 13px * 2);
+}
+
+.tile.huge .desc {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 34px 13px;
+  color: #a7a8a9;
+  font-size: 110%;
+}
+
+.tile.huge button {
+  flex: 1 1 0;
+}
+
+.tile.huge button.add-to-cart img {
+  margin: 0px 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .tile.huge {
+    width: calc(var(--tile-size) * 2);
+    background-position-x: center;
+  }
+
+  .tile.huge .desc {
+    display: none;
+  }
+}

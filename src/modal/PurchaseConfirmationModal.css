@@ -1,0 +1,17 @@
+.purchase-confirmation-modal {
+  min-width: 500px;
+}
+
+.purchase-confirmation-modal .products p:first-child {
+  font-weight: bold;
+  font-size: 120%;
+  margin-bottom: 4px;
+}
+
+.purchase-confirmation-modal .controls > input,
+.purchase-confirmation-modal .controls > button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 12px;
+}

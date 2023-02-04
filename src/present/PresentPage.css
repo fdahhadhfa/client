@@ -1,0 +1,15 @@
+.presentPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.presentPage button {
+  margin-top: 12px;
+}
+
+.skip {
+  margin-bottom: 12px;
+}

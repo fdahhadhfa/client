@@ -1,0 +1,28 @@
+.paymentStatusPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.paymentStatusPage h1 {
+  color: #ffee93;
+  font-size: 16pt;
+}
+
+.paymentStatusPage p {
+  margin-top: 24px;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.paymentStatusPage a {
+  color: #ffee93;
+}
+
+.paymentStatusPage button {
+  margin-top: 24px;
+  padding-left: 48px;
+  padding-right: 48px;
+}

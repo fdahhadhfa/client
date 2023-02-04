@@ -1,0 +1,22 @@
+footer {
+  color: #bbb;
+  margin: auto;
+  max-width: 1200px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+footer div {
+  text-align: center;
+}
+
+footer .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .icons img {
+  margin-top: 5px;
+  margin-right: 10px;
+}

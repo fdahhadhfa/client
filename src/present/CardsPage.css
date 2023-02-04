@@ -1,0 +1,80 @@
+.cardsPage {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.cardsStatus {
+  margin-bottom: 12px;
+}
+
+.cardRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.card,
+.cardCover,
+.cardEmpty {
+  --scale: 0.5;
+  width: calc(240px * var(--scale));
+  height: calc(360px * var(--scale));
+  background-size: cover;
+  margin: 3px;
+}
+
+.card {
+  position: relative;
+}
+
+.card img {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 80%;
+}
+
+.card .name {
+  position: absolute;
+  top: 118px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 9pt;
+  text-shadow: #000 1px 1px 0px, #000 -1px 1px 0px, #000 1px -1px 0px,
+    #000 -1px -1px 0px;
+}
+
+.card .amount {
+  position: absolute;
+  top: 138px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16pt;
+  text-shadow: #000 1px 1px 0px, #000 -1px 1px 0px, #000 1px -1px 0px,
+    #000 -1px -1px 0px;
+  font-weight: bold;
+}
+
+.cardCover {
+  background-image: url("/cards/cover.png");
+  cursor: pointer;
+}
+
+.cardEmpty {
+  background-image: url("/cards/empty.png");
+}
+
+.notFiller {
+  border-radius: 11px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 3px 3px #00ff4b;
+}
+
+.takeReward {
+  margin-top: 12px;
+}

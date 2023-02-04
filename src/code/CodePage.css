@@ -1,0 +1,24 @@
+.code-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #00000033;
+  padding: 15px;
+}
+
+.code-page p {
+  text-align: center;
+}
+
+.code-page input {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.code-page button {
+  margin-top: 10px;
+  width: 100%;
+}

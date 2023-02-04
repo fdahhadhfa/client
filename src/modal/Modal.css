@@ -1,0 +1,37 @@
+.modal {
+  position: relative;
+  min-width: 800px;
+  max-width: 1000px;
+  background-color: #0e333e;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  padding-top: 15px;
+}
+
+.modal h1 {
+  font-size: 140%;
+  text-align: center;
+}
+
+.duration {
+  margin-right: 15px;
+}
+
+.modal .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  background: url("/assets/close.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .modal {
+    min-width: unset;
+  }
+}
